@@ -4,10 +4,30 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <!-- <link rel="icon" href="%= BASE_URL %>favicon.ico"> -->
     <title>crm</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css">
   </head>
   <body>
+    <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-analytics.js"></script>
+
+<script>
+  var firebaseConfig = {
+    apiKey: "AIzaSyASX-3VlqCSClXRevZuNb-ebEV-_WsjH3Q",
+    authDomain: "crmproject-98ed2.firebaseapp.com",
+    databaseURL: "https://crmproject-98ed2.firebaseio.com",
+    projectId: "crmproject-98ed2",
+    storageBucket: "crmproject-98ed2.appspot.com",
+    messagingSenderId: "1042682746483",
+    appId: "1:1042682746483:web:d55703e65dd8c46ef2bc06",
+    measurementId: "G-X85CCNT5P4"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
     <noscript>
       <strong>We're sorry but crm doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
